@@ -1,7 +1,21 @@
+## 设置LinearLayout布局子控件之间的分割线
+##### 设置divider 、showDividers 属性
+```
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/bj_spf_horizontal_divider_line"
+    android:orientation="vertical"
+    android:showDividers="middle">
+</LinearLayout>
+```
+##### 自定义shape: height-横向 width-纵向  bj_spf_horizontal_divider_line.xml 
+```
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
 
-# 基于Retrofit + Okhttp + RxJava + RxAndroid + Rxlifecycle 的一个MVP项目
-- 网络框架
-- 利用Rxlifecycle解决RxJava内存泄漏
-- Glide图片加载
-- 第三方库recyclerview-animators 列表动画
-- 第三方库SpinKit 比较好的loading加载效果
+    <size android:height="0.5dp"/>
+    <solid android:color="#cccccc"/>
+</shape>
+``` 
